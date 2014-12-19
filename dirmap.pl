@@ -1,3 +1,5 @@
+#!/usr/bin/perl -w
+#
 #   File/Dir Mapping script - v0.1
 #   ------------------------------
 #
@@ -63,9 +65,17 @@
 #   - I made a Freemind .mm file and opened it up in a text editor. I copied the node structure from that.
 #
 #   --------------------------------------------------------------------------------------------------------------------
-#
+#   
+#   Change Log
+#   ----------
+#   
+#   Fri 19 Dec 2014
+#   Added dir as param.
+#   
 #   Thu 18 Dec 2014
 #   Written on a coffee break by Matt Fenlon (https://github.com/noln)
+# 
+#   
 #
 #   Note: Adheres to no commenting convention known to man(/woman, keep it contemporary)kind. Becauyse life's too short.
 #   Look, it's a freebie. What do you want? Just run the damn script.
@@ -74,9 +84,21 @@
 use feature qw(say);    # Added so we can use 'say' to output text on a new line.
 use File::Basename;     # Needed to split up the returned filename into dir and filename etc.
 
+say "Wootini";
+
+my $dir;
+$num_args = $#ARGV + 1;
+if ($num_args != 1) {
+    $dir = "/Users/matt/Development/Media/Android";    # This is where the file map gets put.
+    say "Using default path: " . $dir;
+} else {
+    $dir = $ARGV[0];
+    say "Using path: " . $dir;
+}
+
 my $filename = 'filemap.mm';        
 #my $dir = "/Users/matt/Development";    # This is where the file map gets put.
-my $dir = "/Users/matt/Development/Media/Android";    # This is where the file map gets put.
+# my $dir = "/Users/matt/Development/Media/Android";    # This is where the file map gets put.
 
 open(my $fh, '>', $dir . '/' . $filename) or die "Could not open file '$filename' $!";
 

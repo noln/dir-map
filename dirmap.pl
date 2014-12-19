@@ -1,5 +1,5 @@
-#   File/Dir Mapping script
-#   -----------------------
+#   File/Dir Mapping script - v0.1
+#   ------------------------------
 #
 #   (unnecessarily verbose) Backstory:
 #   Over the years I've accumulated a lot of really badly organised folders on my home server. I've got backed up PCs 

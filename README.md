@@ -29,3 +29,5 @@ DirMap creates a simple Freemind map of a given directory.Tested and working in 
 * Run *perl dirmap.pl*
 * The file *filemap.mm* will have been created in the directory that you specified, open it up in Freemind.
 * That's it...
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/noln/dirmap/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

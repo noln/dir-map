@@ -80,6 +80,13 @@
 #   Note: Adheres to no commenting convention known to man(/woman, keep it contemporary)kind. Becauyse life's too short.
 #   Look, it's a freebie. What do you want? Just run the damn script.
 
+#
+#	Roadmap
+#	-------
+#	1. Add file extension filter.
+#	2. Enable crawling of remote directories fia SFTP.
+#
+
 
 use feature qw(say);    # Added so we can use 'say' to output text on a new line.
 use File::Basename;     # Needed to split up the returned filename into dir and filename etc.
